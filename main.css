@@ -1,0 +1,47 @@
+html {
+    font-size: 22px;
+
+}
+
+body {
+   
+
+    background-color: rgb(156, 167, 185);
+ 
+}
+
+a {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+a:visited {
+    font-size: 20px;
+    color: rgb(10, 39, 90);
+}
+a:hover {
+    font-size: 20px;
+    color: rgb(64, 69, 148);
+}
+fieldset
+{
+    background-color: rgb(3, 23, 58);
+    color: rgb(255, 255, 255);
+}
+legend{
+    background-color: rgb(51, 73, 110);
+    color: rgb(255, 255, 255);
+
+
+}
+summary{
+    color:  rgb(3, 23, 58);
+
+}
+h1{
+
+    font-size: 40px;
+}
+h2{
+
+    font-size: 30px;
+}

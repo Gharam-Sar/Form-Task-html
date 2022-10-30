@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="auther" content="Gharam">
+    <meta name="description" content="testing my tasks on html">
+
+    <title>Tasks Test Page</title>
+    <link rel="icon" href="G.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+</head>
+
+<body >
+    <header>
+        <h1>Gharam's Page</h1>
+        <ol>
+
+
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li>
+                        <a href="#random">Random info about the page</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#personal">Personal info</a>
+                    </li>
+                  
+                    <li> <a href="#family">About your Family</a></li> 
+                    <li><a href="#education">About your Education</a></li>
+                    
+                    <li><a href="#writing">Writing section</a></li>
+                    <li><a href="#images">Some Images</a></li>
+
+                    <li><a href="#me">get to know me</a></li>
+
+                </ul>
+        </ol>
+        </nav>
+    </header>
+    <main>
+
+        <article id="random">
+            <hr>
+            <h2>
+                What is 'to get to know someone'?
+            </h2>
+            <dl>
+                <dt>To get to know someone</dt>
+                <dd>
+                   If you <em>get to know someone</em>, you find out what they are like by <strong> spending time with them and learning things </strong>about them.
+                </dd>
+            </dl>
+            <hr>
+            <h2>Questions you might have:</h2>
+            <aside>
+                <details>
+                    <summary>
+                        What is this page?</mark>
+                    </summary>
+                    <p>
+                      This is a page for me and you to get to know each other :)
+                    </p>
+                  
+
+                </details>
+            </aside>
+            <aside>
+                <details>
+                    
+                    <summary>
+                        When will I respond?</mark>
+                    </summary>
+                    <p>
+                        I usually check this around <time datetime="08:00">
+                            8 pm
+
+                        </time>
+                        so I will probably respond in around <time datetime="PT3H"> 12 hours</time> or so.
+                    </p>
+
+                </details>
+            </aside>
+           
+        </articale>
+        <hr>
+    </article>
+    
+
+        <article id="contact">
+            <h2>Enter some of your info so I can get to know you</h2>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+
+                    <legend id="personal">
+                        <abbr title="Some of your personal info">
+                           
+                                Personal Info
+                           
+                        </abbr>
+
+                    </legend>
+
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required
+                            autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="*****" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                            required>
+                    </p>
+                    <p>
+                        <label for="decade">When were you born:</label>
+                        <input type="number" name="decade" id="decade" min="1940" max="2020" step="1" value="1990">
+                    </p>
+                    <p>
+                        <label for="language">Favorite language:</label>
+                        <select name="language" id="language" multiple size="5">
+                            <optgroup label="basic">
+                                <option value="C">C</option>
+                                <option value="assembly">assembly</option>
+                            </optgroup>
+                            <optgroup label="oop">
+                                <option value="c++" selected>c++</option>
+                                <option value="java">java</option>
+                                <option value="python">python</option>
+                                <option value="html">html</option>
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+
+                    <legend id="family">
+                        <abbr title="Some info about your family">
+                           
+                                how many sibilings do you have?
+                        </abbr>
+
+                    </legend>
+                    <p>
+                        <input type="radio" name="sibilings" id="onlyChild" value="onlyChild">
+                        <label for="onlyChild">I'm only Child</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="sibilings" id="onlyChild" value="onlyChild">
+                        <label for="one">I have one sibiling</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="sibilings" id="onlyChild" value="onlyChild">
+                        <label for="more">I have more than 1 sibiling </label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+
+                    <legend id="education">
+                        <abbr title="Some info about your education">
+                            
+                                What degrees do you have?
+                        </abbr>
+
+                    </legend>
+
+                    <p>
+                        <input type="checkbox" name="degree" id="highschool" value="highschool">
+                        <label for="highschool">high school</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="degree" id="bachelor" value="bachelor">
+                        <label for="bachelor">BSC</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="degree" id="MSC" value="MSC">
+                        <label for="MSC">MSC</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="degree" id="phD" value="phD">
+                        <label for="phD">phD</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend id="writing">
+                        <abbr title="Write something for me to read">
+                         Send Me something of you writing 
+                        </abbr>
+
+                    </legend>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Type your message here"></textarea>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend id="images">
+                        <abbr title="Some images to see if we have the same taste">
+                           
+                                Which image do you like better? 
+                        </abbr>
+
+                    </legend>
+                    <p>
+                        <input type="radio" name="image" id="img1" value="img1">
+                        <label for="img1"></label>
+                        <img src="img/img1.png" alt="image1" title="image1" width="200" height="300">
+
+                    </p>
+                    <p>
+                        <input type="radio" name="image" id="img2" value="img2">
+                        <label for="img2"></label>
+                        <img src="img/img2.png" alt="image2" title="image2" width="300"
+                        height="300"> 
+                    </p>
+                    
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+
+        <hr>
+       
+        
+    </main>
+    <article id="me">
+    &lt;&lt;&lt;<a href="about.html">Gharam</a> &copy;&gt;&gt;&gt;</article>
+</body>
+
+</html>
